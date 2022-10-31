@@ -15,6 +15,8 @@ public class StudentService {
     @Autowired
     DataFile fileService;
     private List<Data> students = new ArrayList<>();
+
+    //Konstruktori joka estää palvelimen avaamisen.
     /* 
     public StudentService(){
         try {
@@ -24,11 +26,13 @@ public class StudentService {
         }
     }
     */
-    
+
+    // Lisää oppilaan tiedostoon. Ei toimi
     public void addStudent(Data student) throws Exception {
         students.add(student);
     }
 
+    // Hakee oppilaiden tiedot tiedostosta. Ei toimi
     public List<Data> getStudents(){
         return new ArrayList<>(students);
     }

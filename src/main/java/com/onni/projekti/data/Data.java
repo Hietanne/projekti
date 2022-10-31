@@ -8,6 +8,9 @@ public class Data {
 
     private static int count = 1;
 
+
+    //Konstruktori ottaa vastaan etunimen sukunimen ja luokkatunnuksen(numero)
+    //Lisätään myös yksi numero lisää jokaisen opiskelijan päätteeksi
     public Data(String firstName, String lastName, int classID) {
         this.firstName = firstName;
         this.lastName = lastName;
